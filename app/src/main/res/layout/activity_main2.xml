@@ -5,17 +5,18 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity2">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="HALLO AKU ZAKY CANTIKSSSS!"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:text="SIGNUP SCREEN ZAKY"
+        android:textSize="25dp"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="50dp"
-        android:id="@+id/tvLoginScreen"/>
+        android:layout_marginTop="25dp"
+        android:id="@+id/tvSignup" />
 
     <EditText
         android:layout_width="250dp"
@@ -25,12 +26,12 @@
         android:paddingStart="10dp"
         android:textColorHint="@color/white"
         android:textColor="@color/white"
-        app:layout_constraintTop_toBottomOf="@+id/tvLoginScreen"
+        app:layout_constraintTop_toBottomOf="@+id/tvSignup"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="20dp"
         android:id="@+id/edtUsername" />
-    
+
     <EditText
         android:layout_width="250dp"
         android:layout_height="50dp"
@@ -43,26 +44,42 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="20dp"
+        android:inputType="textPassword"
         android:id="@+id/edtPassword" />
 
-    <Button
+    <EditText
         android:layout_width="250dp"
         android:layout_height="50dp"
-        android:text="Login Screen"
-        app:layout_constraintTop_toBottomOf="@+id/edtPassword"
+        android:background="@color/black"
+        android:paddingStart="10dp"
+        android:hint="gmail"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/edtPassword"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="20dp"
-        android:id="@+id/btnLogin" />
+        android:inputType="textEmailAddress"
+        android:id="@+id/edtGmail" />
 
     <Button
         android:layout_width="250dp"
         android:layout_height="50dp"
         android:text="Buat Akun"
-        app:layout_constraintTop_toBottomOf="@id/btnLogin"
+        app:layout_constraintTop_toBottomOf="@id/edtGmail"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="20dp"
-        android:id="@+id/btnBuatAkun"/>
+        android:id="@+id/btnBuatAkun" />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:text="Lanjut Login"
+        app:layout_constraintTop_toBottomOf="@id/btnBuatAkun"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:id="@+id/btnLogin" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
