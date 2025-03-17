@@ -49,6 +49,8 @@ public class MainActivity extends AppCompatActivity {
                     SharedPreferenceHelper sph = new SharedPreferenceHelper(MainActivity.this);
                     if (inputUsername.equalsIgnoreCase(sph.GetUsername()) && inputPassword.equalsIgnoreCase(sph.GetPassword())) {
                         Toast.makeText(MainActivity.this, "Berhasil Login", Toast.LENGTH_SHORT).show();
+                    } else {
+                        Toast.makeText(MainActivity.this, "Gagal Login", Toast.LENGTH_SHORT).show();
                     }
                 }
             }
